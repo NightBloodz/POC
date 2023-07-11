@@ -1,5 +1,5 @@
 
-var leakedData = window.opener.document.documentElement.innerHtml
+var leakedData = window.opener.document.documentElement.innerHTML
 console.log(leakedData)
 alert(leakedData)
 
